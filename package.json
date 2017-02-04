@@ -1,0 +1,33 @@
+{
+  "name": "laravel-elixir-svg2png",
+  "version": "1.0.0",
+  "description": "Svg2png wrapper for Laravel Elixir.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cosimomeli/laravel-elixir-svg2png.git"
+  },
+  "keywords": [
+    "laravel",
+    "elixir",
+    "svg2png",
+    "png",
+    "svg",
+    "gulp"
+  ],
+  "author": "Cosimo Meli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cosimomeli/laravel-elixir-svg2png/issues"
+  },
+  "homepage": "https://github.com/cosimomeli/laravel-elixir-svg2png",
+  "dependencies": {
+    "gulp-svg2png": "^2.0"
+  },
+  "peerDependencies": {
+    "laravel-elixir": ">=3.0"
+  }
+}
