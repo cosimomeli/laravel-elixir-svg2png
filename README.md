@@ -55,7 +55,7 @@ var elixir = require('laravel-elixir');
 require('laravel-elixir-svg2png');
 
 elixir(function(mix) {
-    mix.svgtopng('public/flags/*.svg', 'public/png-flags');
+    mix.svg2png('public/flags/*.svg', 'public/png-flags');
 });
 ```
 
