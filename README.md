@@ -1,10 +1,10 @@
 # Laravel-Elixir-Svg2png
->This is a simple wrapper around Laravel Elixir for [gulp-svg2png](https://github.com/akoenig/gulp-svg2png). 
+>Converts SVG images to PNG using [Sharp](https://github.com/lovell/sharp) 
 
 ## Why?
 
 As PHP GD library doesn't support SVG files, I had the need to convert all SVG files to PNG to use them.
-With gulp-svg2png you can add the conversion to your build and deploy pipeline, so this is just its plugin for Laravel Elixir
+With this plugin you can add the conversion to your build and deploy pipeline.
 
 ## Getting Started
 Install the module with [npm](https://npmjs.org):
@@ -28,7 +28,7 @@ elixir(function(mix) {
 
 ## Arguments
 
-### svg2png(src, dst, [width, height, opts])
+### svg2png(src, dst, [width, height])
 
 `src`
 
@@ -46,16 +46,6 @@ The width of destination files (defaults to SVG width)
 
 The height of destination files (defaults to SVG height)
 
-`opts`
-
-```javascript
-{
-    verbose: true, //Logs progress information
-    concurrency: 5 //Limit the amount of concurrent tasks processed at one time
-}
-```
-
-
 
 ## Example
 This is an example of a Gulp file that runs svg2png to convert all my SVG flags :
@@ -69,4 +59,3 @@ elixir(function(mix) {
 });
 ```
 
-Adjust the concurrency number accordingly to your system resources!

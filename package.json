@@ -1,7 +1,7 @@
 {
   "name": "laravel-elixir-svg2png",
-  "version": "1.0.0",
-  "description": "Svg2png wrapper for Laravel Elixir.",
+  "version": "2.0.0",
+  "description": "Convert SVG images to PNG using Sharp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,8 @@
     "svg2png",
     "png",
     "svg",
-    "gulp"
+    "gulp",
+    "sharp"
   ],
   "author": "Cosimo Meli",
   "license": "MIT",
@@ -25,7 +26,9 @@
   },
   "homepage": "https://github.com/cosimomeli/laravel-elixir-svg2png",
   "dependencies": {
-    "gulp-svg2png": "^2.0"
+    "gulp-util": "^3.0.8",
+    "sharp": "^0.17.2",
+    "through2": "^2.0.3"
   },
   "peerDependencies": {
     "laravel-elixir": ">=3.0"
